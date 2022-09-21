@@ -1,0 +1,19 @@
+{
+  "name": "model-storage-backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "back": "node index.js"
+  },
+  "author": "Tabola Mikhail",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "express-promise-router": "^4.1.1",
+    "mongoose": "^6.6.1",
+    "qs": "^6.11.0",
+    "ramda": "^0.28.0"
+  }
+}
