@@ -13,9 +13,13 @@ const schema = new Schema({
         type: Date,
         default: Date.now()
     },
-    author: { // так, хорошо, а как сделать его более безопасным?
-        type: ObjectId,
+    previewImage: {
+        type: String,
         default: ''
+    },
+    authorId: {
+        type: ObjectId,
+        ref: 'Users'
     }
 })
 
