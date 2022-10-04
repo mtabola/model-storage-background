@@ -1,4 +1,5 @@
 const { model, Schema, Schema: {Types: {ObjectId}} } = require("mongoose")
+const renameIdPlugin = require('mongoose-rename-id');
 
 const schema = new Schema({
     title: {
@@ -22,5 +23,6 @@ const schema = new Schema({
         ref: 'Users'
     }
 })
+schema.plugin(renameIdPlugin({newIdName: 'id'}))
 
 module.exports = model('Articles', schema)
