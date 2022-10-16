@@ -7,11 +7,7 @@ const cors = require('cors')
 const { routes } = require("./src/routes");
 
 //настройка подключения к бд
-mongoose.connect('mongodb://localhost:27017/msdb', {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+require('./src/config/database')
 // инициализация приложения
 const app = express()
 app.use(cors())
