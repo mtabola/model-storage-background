@@ -2,6 +2,7 @@ module.exports = {
     routes: [
         'roles',
         'users',
-        'articles'
+        'articles',
+        'auth'
     ]
 }

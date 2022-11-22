@@ -1,4 +1,7 @@
-const { model, Schema, Schema: {Types: {ObjectId}} } = require("mongoose")
+const { model, 
+        Schema, 
+        Schema: {Types: {ObjectId}} 
+    } = require("mongoose")
 
 const schema = new Schema({
     fname: {
@@ -13,7 +16,11 @@ const schema = new Schema({
         type: String,
         default: ''
     },
-    password: { // так, хорошо, а как сделать его более безопасным?
+    passwordHash: {
+        type: String,
+        default: ''
+    },
+    passwordSalt: {
         type: String,
         default: ''
     },
