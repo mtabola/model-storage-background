@@ -1,6 +1,5 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
 const http = require('http')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
